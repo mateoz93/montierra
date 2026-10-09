@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONTIERRA - Café de Origen Excelso</title>
+    <!-- Vinculación del archivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER (ENCABEZADO Y MENÚ DE NAVEGACIÓN) -->
+    <header class="encabezado">
+        <div class="logo-contenedor">
+            <!-- Logotipo vectorial en HTML/SVG con montañas, taza de café y colores marrón, blanco y negro -->
+            <svg class="logo-icono" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Montañas -->
+                <polygon points="10,65 35,25 60,65" fill="#4a2c11" />
+                <polygon points="40,65 65,30 90,65" fill="#2b1810" />
+                <polygon points="35,25 42,37 28,37" fill="#ffffff" />
+                <polygon points="65,30 72,42 58,42" fill="#ffffff" />
+                <!-- Taza de café -->
+                <rect x="38" y="60" width="24" height="18" rx="4" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+                <path d="M 62 64 C 68 64, 68 74, 62 74" fill="none" stroke="#ffffff" stroke-width="2"/>
+                <path d="M 44 56 Q 46 52 44 48" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                <path d="M 50 56 Q 52 52 50 48" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+                <path d="M 56 56 Q 58 52 56 48" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-texto">
+                <h2>MONTIERRA</h2>
+                <span>CAFÉ DE ORIGEN</span>
+            </div>
+        </div>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. HERO (SECCIÓN PRINCIPAL) -->
+    <section id="inicio" class="hero">
+        <div class="hero-texto">
+            <h1>MONTIERRA</h1>
+            <p class="eslogan">Café que honra la tierra en cada taza</p>
+            <p class="descripcion">
+                Café de origen excelso tipo exportación. Seleccionamos cuidadosamente cada grano para brindar una experiencia sensorial única a personas, negocios y cafeterías exigentes.
+            </p>
+            <a href="#contacto" class="boton-cta">Realizar Pedido</a>
+        </div>
+        <div class="hero-imagen">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Taza de café servida de origen excelso MONTIERRA">
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+        <div class="nosotros-imagen">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=600&auto=format&fit=crop" alt="Recolector seleccionando cerezas de café en la montaña">
+        </div>
+        <div class="nosotros-texto">
+            <h2>Quiénes Somos</h2>
+            <p><strong>¿Quiénes somos?</strong> Somos una marca apasionada por el café de alta montaña, dedicada a llevar grano excelso tipo exportación directamente de la finca a tu mesa.</p>
+            <p><strong>¿Qué hacemos?</strong> Controlamos de forma rigurosa cada etapa del proceso: desde la recolección manual y el secado al sol, hasta el tostado artesanal de perfil alto.</p>
+            <p><strong>¿A quién ayudamos?</strong> Abastecemos a personas amantes del buen café, así como a negocios, oficinas y cafeterías que buscan diferenciarse por la calidad de su oferta.</p>
+            <p><strong>¿Qué nos diferencia?</strong> Nuestro compromiso con la sostenibilidad y la trazabilidad total de nuestro grano excelso. Honramos la tierra en cada taza.</p>
+        </div>
+    </section>
+
+    <!-- 4. PRODUCTOS -->
+    <section id="productos" class="productos">
+        <h2>Nuestros Productos Exclusivos</h2>
+        <div class="productos-contenedor">
+            
+            <!-- Producto 1 -->
+            <article class="producto-tarjeta">
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=400&auto=format&fit=crop" alt="Bolsa de Café en Grano Excelso MONTIERRA">
+                <h3>Café Excelso en Grano (500g)</h3>
+                <p>Grano entero con tueste medio, notas achocolatadas y acidez cítrica suave. Perfecto para moler al instante.</p>
+                <p class="precio">$45.000 COP</p>
+                <a href="#contacto" class="boton-tarjeta">Comprar ahora</a>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="producto-tarjeta">
+                <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?q=80&w=400&auto=format&fit=crop" alt="Bolsa de Café Molido de Origen MONTIERRA">
+                <h3>Café Molido Suave (500g)</h3>
+                <p>Molienda media optimizada para cafetera de goteo, prensa francesa o cafetera italiana tradicional.</p>
+                <p class="precio">$42.000 COP</p>
+                <a href="#contacto" class="boton-tarjeta">Comprar ahora</a>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="producto-tarjeta">
+                <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?q=80&w=400&auto=format&fit=crop" alt="Edición Especial Edición Especial Tueste Oscuro">
+                <h3>Edición Especial Tueste Oscuro</h3>
+                <p>Selección de granos de alta montaña con cuerpo denso, aroma intesamente ahumado y notas a nuez.</p>
+                <p class="precio">$52.000 COP</p>
+                <a href="#contacto" class="boton-tarjeta">Comprar ahora</a>
+            </article>
+
+            <!-- Producto 4 -->
+            <article class="producto-tarjeta">
+                <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?q=80&w=400&auto=format&fit=crop" alt="Lote Institucional para Cafeterías">
+                <h3>Saco Institucional (5 Kg)</h3>
+                <p>Presentación especial diseñada para cafeterías y restaurantes que requieren un suministro constante de grano excelso.</p>
+                <p class="precio">$380.000 COP</p>
+                <a href="#contacto" class="boton-tarjeta">Cotizar volumen</a>
+            </article>
+
+            <!-- Producto 5 -->
+            <article class="producto-tarjeta">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=400&auto=format&fit=crop" alt="Kit Barista MONTIERRA">
+                <h3>Kit Barista en Casa</h3>
+                <p>Incluye 1 bolsa de café excelso 250g, prensa francesa y taza institucional con logotipo de la marca.</p>
+                <p class="precio">$120.000 COP</p>
+                <a href="#contacto" class="boton-tarjeta">Comprar ahora</a>
+            </article>
+
+            <!-- Producto 6 -->
+            <article class="producto-tarjeta">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=400&auto=format&fit=crop" alt="Caja Gift Box Corporativa">
+                <h3>Gift Box Corporativa</h3>
+                <p>Caja de regalo de madera con muestra de 3 orígenes excelsos, ideal para regalos empresariales.</p>
+                <p class="precio">$150.000 COP</p>
+                <a href="#contacto" class="boton-tarjeta">Comprar ahora</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- 5. SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <h2>Servicios para Personas, Negocios y Cafeterías</h2>
+        <div class="servicios-contenedor">
+            <div class="servicio-tarjeta">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=150&auto=format&fit=crop" alt="Servicio de Suministro Corporativo">
+                <h3>Suministro a Negocios</h3>
+                <p>Proveemos café excelso a empresas y oficinas con entregas periódicas programadas y precios mayoristas.</p>
+            </div>
+            <div class="servicio-tarjeta">
+                <img src="https://images.unsplash.com/photo-1572286258217-ae3d1a877543?q=80&w=150&auto=format&fit=crop" alt="Asesoría y Capacitación a Baristas">
+                <h3>Capacitación para Cafeterías</h3>
+                <p>Asesoramos a tu equipo en la preparación correcta, calibración de molinos y técnicas de arte latte.</p>
+            </div>
+            <div class="servicio-tarjeta">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=150&auto=format&fit=crop" alt="Barra de Café Móvil para Eventos">
+                <h3>Barra de Baristas en Vivo</h3>
+                <p>Llevamos nuestra estación de café de especialidad a tus eventos privados o corporativos con baristas profesionales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. TABLA COMPARATIVA DE PLANES -->
+    <section class="seccion-tabla">
+        <h2>Planes de Suministro y Características</h2>
+        <div class="tabla-contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Cliente</th>
+                        <th>Presentación</th>
+                        <th>Frecuencia de Envío</th>
+                        <th>Perfil del Grano</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hogar y Personas</td>
+                        <td>250g - 500g</td>
+                        <td>Bajo demanda / Mensual</td>
+                        <td>Tueste Medio Suave</td>
+                    </tr>
+                    <tr>
+                        <td>Oficinas y Negocios</td>
+                        <td>2 Kg - 5 Kg</td>
+                        <td>Quincenal</td>
+                        <td>Tueste Balanceado</td>
+                    </tr>
+                    <tr>
+                        <td>Cafeterías de Especialidad</td>
+                        <td>10 Kg +</td>
+                        <td>Semanal</td>
+                        <td>Perfil Personalizado</td>
+                    </tr>
+                    <tr>
+                        <td>Eventos Especiales</td>
+                        <td>Barra móvil en vivo</td>
+                        <td>Por fecha de evento</td>
+                        <td>Surtido Variado</td>
+                    </tr>
+                    <tr>
+                        <td>Exportación e Intermediarios</td>
+                        <td>Sacos de 70 Kg</td>
+                        <td>Según contrato</td>
+                        <td>Excelso Tipo Exportación</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 7. GALERÍA -->
+    <section id="galeria" class="galeria">
+        <h2>Galería del Proceso y Experiencia</h2>
+        <div class="galeria-contenedor">
+            <img src="https://images.unsplash.com/photo-1524350876685-274059332603?q=80&w=400&auto=format&fit=crop" alt="Recolección manual de cerezas rojas de café en la finca">
+            <img src="https://images.unsplash.com/photo-1607681034540-2c46cc71896d?q=80&w=400&auto=format&fit=crop" alt="Proceso de secado del grano de café al sol en marquesinas">
+            <img src="https://images.unsplash.com/photo-1518832553480-cd0e625ed3e6?q=80&w=400&auto=format&fit=crop" alt="Tostado artesanal del grano de café excelso">
+            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=400&auto=format&fit=crop" alt="Barista sirviendo una taza de café en una cafetería">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=400&auto=format&fit=crop" alt="Taza de café humeante servida sobre mesa de madera">
+            <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?q=80&w=400&auto=format&fit=crop" alt="Arte latte elaborado cuidadosamente por un barista experto">
+        </div>
+    </section>
+
+    <!-- 8. FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos o Solicita una Cotización</h2>
+        <form class="formulario-contacto">
+            <div class="campo">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000" required>
+            </div>
+
+            <div class="campo">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Medellín" required>
+            </div>
+
+            <div class="campo">
+                <label for="servicio">Tipo de Cliente / Servicio de Interés:</label>
+                <select id="servicio" name="servicio">
+                    <option value="persona">Consumidor Particular (Persona)</option>
+                    <option value="negocio">Suministro para Negocio / Oficina</option>
+                    <option value="cafeteria">Suministro para Cafetería</option>
+                    <option value="capacitacion">Capacitación y Asesoría para Baristas</option>
+                    <option value="barra">Servicio de Barra para Eventos</option>
+                    <option value="exportacion">Lotes para Exportación</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tus requerimientos o preguntas aquí..."></textarea>
+            </div>
+
+            <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- 9. FOOTER (PIE DE PÁGINA) -->
+    <footer class="pie-pagina">
+        <div class="pie-contenido">
+            <h3>MONTIERRA — Café de Origen Excelso</h3>
+            <p><em>Café que honra la tierra en cada taza</em></p>
+            <p>Ubicación: Medellín, Colombia</p>
+            <p>Teléfono: 3137381106 | Correo: montierra@gmail.com</p>
+            <p>Instagram: @usuario</p>
+            <p class="derechos">&copy; 2026 MONTIERRA Café de Origen — Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

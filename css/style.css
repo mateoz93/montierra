@@ -1,0 +1,459 @@
+/* VARIABLES CSS - IDENTIDAD VISUAL MONTIERRA */
+:root {
+    --color-principal: #4a2c11;      /* Marrón café profundo */
+    --color-secundario: #000000;     /* Negro corporativo */
+    --color-complementario: #2b1810; /* Marrón oscuro / tostado */
+    --color-fondo: #ffffff;          /* Blanco */
+    --color-gris-claro: #f7f5f2;     /* Beige/gris muy suave para alternar */
+    --color-texto: #1c1917;          /* Texto principal oscuro */
+    
+    --fuente-titulos: 'Helvetica', Arial, sans-serif;
+    --fuente-textos: 'Arial', sans-serif;
+}
+
+/* RESET GENERAL Y ESTILOS BÁSICOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-textos);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-principal);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 1. HEADER Y NAVEGACIÓN CON LOGOTIPO */
+.encabezado {
+    background-color: var(--color-secundario);
+    color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icono {
+    width: 45px;
+    height: 45px;
+}
+
+.logo-texto h2 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.logo-texto span {
+    color: #d1d5db;
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #d97706;
+}
+
+/* 2. HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 30px;
+    background-color: var(--color-gris-claro);
+    gap: 30px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+    color: var(--color-principal);
+}
+
+.hero-texto .eslogan {
+    font-size: 1.2rem;
+    color: var(--color-secundario);
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-texto .descripcion {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+.boton-cta {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: #ffffff;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton-cta:hover {
+    background-color: var(--color-complementario);
+}
+
+.hero-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-imagen img {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* 3. NOSOTROS */
+.nosotros {
+    display: flex;
+    align-items: center;
+    padding: 60px 30px;
+    gap: 40px;
+}
+
+.nosotros-imagen {
+    flex: 1;
+}
+
+.nosotros-texto {
+    flex: 1;
+}
+
+.nosotros-texto h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.nosotros-texto p {
+    margin-bottom: 12px;
+}
+
+/* 4. PRODUCTOS */
+.productos {
+    padding: 60px 30px;
+    background-color: var(--color-gris-claro);
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto-tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.producto-tarjeta:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.producto-tarjeta img {
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.producto-tarjeta h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.producto-tarjeta p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.producto-tarjeta .precio {
+    font-weight: bold;
+    color: var(--color-principal);
+    font-size: 1.15rem;
+}
+
+.boton-tarjeta {
+    display: block;
+    background-color: var(--color-secundario);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.boton-tarjeta:hover {
+    background-color: var(--color-principal);
+}
+
+/* 5. SERVICIOS */
+.servicios {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.servicios-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servicio-tarjeta {
+    background-color: var(--color-gris-claro);
+    padding: 25px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.servicio-tarjeta img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.servicio-tarjeta h3 {
+    margin-bottom: 10px;
+}
+
+/* 6. TABLA */
+.seccion-tabla {
+    padding: 60px 30px;
+    background-color: var(--color-gris-claro);
+    text-align: center;
+}
+
+.seccion-tabla h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.tabla-contenedor {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 14px 18px;
+    border: 1px solid #d1d5db;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-principal);
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+/* 7. GALERÍA */
+.galeria {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.galeria-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.galeria-contenedor img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.galeria-contenedor img:hover {
+    transform: scale(1.03);
+}
+
+/* 8. FORMULARIO DE CONTACTO */
+.contacto {
+    padding: 60px 30px;
+    background-color: var(--color-gris-claro);
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input, 
+.campo select, 
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-family: var(--fuente-textos);
+}
+
+.boton-enviar {
+    background-color: var(--color-principal);
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.boton-enviar:hover {
+    background-color: var(--color-complementario);
+}
+
+/* 9. FOOTER */
+.pie-pagina {
+    background-color: var(--color-secundario);
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.pie-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pie-pagina h3 {
+    color: #ffffff;
+}
+
+.pie-pagina .derechos {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+}
+
+/* DISEÑO RESPONSIVE CON MEDIA QUERIES */
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+    }
+}
